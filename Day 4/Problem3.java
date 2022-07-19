@@ -8,18 +8,9 @@ public class Problem3 {
         Scanner input1 = new Scanner(System.in);
         Scanner input2 = new Scanner(System.in);  
 
-        ArrayList<Integer> arrListNum1 = new ArrayList<Integer>();
-        arrListNum1.add(1);
-        arrListNum1.add(2);
-        arrListNum1.add(3);
-        arrListNum1.add(4);
-        arrListNum1.add(6);
+        ArrayList<Integer> arrListNum1 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,6));
 
-        ArrayList<Integer> arrListNum2 = new ArrayList<Integer>();
-        arrListNum2.add(2);
-        arrListNum2.add(5);
-        arrListNum2.add(9);
-        arrListNum2.add(11);
+        ArrayList<Integer> arrListNum2 = new ArrayList<Integer>(Arrays.asList(2,5,9,11));
 
         //Input
         System.out.println("Input1: " + arrListNum1);
