@@ -1,16 +1,13 @@
-package controller;
+package com.HelloWorld.web.hello.controller;
 
-import request.HelloRequest;
-import response.HelloResponse;
+import com.HelloWorld.web.hello.request.HelloRequest;
+import com.HelloWorld.web.hello.response.HelloResponse;
 import lombok.SneakyThrows;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import request.HelloRequest;
-import response.HelloResponse;
-
 
 import java.util.ArrayList;
 import java.util.HashMap;

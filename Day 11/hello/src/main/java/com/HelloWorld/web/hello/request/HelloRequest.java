@@ -1,4 +1,4 @@
-package request;
+package com.HelloWorld.web.hello.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
