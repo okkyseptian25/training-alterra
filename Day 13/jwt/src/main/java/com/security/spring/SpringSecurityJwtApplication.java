@@ -20,27 +20,27 @@ public class SpringSecurityJwtApplication {
 		SpringApplication.run(SpringSecurityJwtApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner run(AppUserService appUserService) {
-
-		return args -> {
-
-			appUserService.saveUser(new AppUser(null, "Okky Septian", "08123", "okky123", new ArrayList<>()));
-			appUserService.saveUser(new AppUser(null, "Ahmad Aunullah", "08456", "aan123", new ArrayList<>()));
-			appUserService.saveUser(new AppUser(null, "Denta Dizon","08789", "denta123", new ArrayList<>()));
-			appUserService.saveUser(new AppUser(null, "Jalaludin","08012", "jalal123", new ArrayList<>()));
-
-			appUserService.saveRole(new Role(null, "ROLE_USER"));
-			appUserService.saveRole(new Role(null, "ROLE_MANAGER"));
-			appUserService.saveRole(new Role(null, "ROLE_ADMIN"));
-			appUserService.saveRole(new Role(null, "ROLE_SUPER_ADMIN"));
-
-			appUserService.addRoleToUser("08123", "ROLE_USER");
-			appUserService.addRoleToUser("08456", "ROLE_MANAGER");
-			appUserService.addRoleToUser("08789", "ROLE_ADMIN");
-			appUserService.addRoleToUser("08012", "ROLE_SUPER_ADMIN");
-		};
-	}
+//	@Bean
+//	public CommandLineRunner run(AppUserService appUserService) {
+//
+//		return args -> {
+//
+//			appUserService.saveUser(new AppUser(null, "Okky Septian", "08123", "okky123", new ArrayList<>()));
+//			appUserService.saveUser(new AppUser(null, "Ahmad Aunullah", "08456", "aan123", new ArrayList<>()));
+//			appUserService.saveUser(new AppUser(null, "Denta Dizon","08789", "denta123", new ArrayList<>()));
+//			appUserService.saveUser(new AppUser(null, "Jalaludin","08012", "jalal123", new ArrayList<>()));
+//
+//			appUserService.saveRole(new Role(null, "ROLE_USER"));
+//			appUserService.saveRole(new Role(null, "ROLE_MANAGER"));
+//			appUserService.saveRole(new Role(null, "ROLE_ADMIN"));
+//			appUserService.saveRole(new Role(null, "ROLE_SUPER_ADMIN"));
+//
+//			appUserService.addRoleToUser("08123", "ROLE_USER");
+//			appUserService.addRoleToUser("08456", "ROLE_MANAGER");
+//			appUserService.addRoleToUser("08789", "ROLE_ADMIN");
+//			appUserService.addRoleToUser("08012", "ROLE_SUPER_ADMIN");
+//		};
+//	}
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
